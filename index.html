@@ -93,35 +93,63 @@
       <h1></h1>
       <div class="card-group">
         <div class="card mx-3">
-          <img class="card-img-top" src="..." alt="Card image cap" />
           <div class="card-body">
-            <h5 class="card-title">How does JS works</h5>
+            <h5 class="card-title text-center">How JS works</h5>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+              JavaScript file এর জন্য প্রতিটি Browser এ একটি করে JS Engine
+              থাকে। যার মাধ্যমে JavaScript Browser এ run হয়। Example: Google
+              Chrome => V8 Engine, Internet Explorer => Chakra, Mozila Firefox =>
+              Spider Monkey, Safari => JavaScript Core Webkit । প্রতিটি ইঞ্জিনে ৩
+              টি অংশ রয়েছে যেখানে Parse, Line by Line কোড চেক করে এবং কোনো ERROR
+              থাকলে তা Throw করে। অন্যথায় একটি Structure যার নাম Abstruct Syntax
+              Tree(AST) এর পর এটি Machine Code এ রূপান্তরিত হয়। এর পর এটি
+              execute হয়।
             </p>
           </div>
         </div>
         <div class="card mx-3">
-          <img class="card-img-top" src="..." alt="Card image cap" />
           <div class="card-body">
-            <h5 class="card-title">How does event loop work</h5>
+            <h5 class="card-title text-center">How Event loop work</h5>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+              যখন কোনো JavaScript Code Execute হয় তখন ৩টি স্তর রয়েছে।
+              Execution Stack,  Web API’s  Message Queue । যখন JavaScript
+              line-by-line চেক করা হয় তখন সবগুলো Global Execution Context এ জমা
+              হয়। যখন সেটি Call করা হয় তখন Global Execution Context থেকে সেটি
+              Execution Stack এ এসে Execute হওয়ার পর সেটি Exectuion Stack থেকে
+              Remove হয়ে যায়। কিন্তু যখন কোনো Function Execute হতে Time লাগে
+              তবে Web API’s এ গিয়ে Wait করে। যখন Waiting Time শেষ হলে তা Message
+              Queue এর মধ্যে হয়ে Execution Stack এসে Execute হয়। ২য় Execution কে
+              Event Loop বলে
             </p>
           </div>
         </div>
         <div class="card mx-3">
-          <img class="card-img-top" src="..." alt="Card image cap" />
           <div class="card-body">
-            <h5 class="card-title">Local vs Session</h5>
+            <h5 class="card-title text-center">Local vs Session</h5>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Sessional Storage</th>
+                    <th scope="col">Local Storage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>After browser close the data automatically erased</th>
+                    <td>Data always store in browser else someone don’t delete it manually</td>
+                  </tr>
+                  <tr>
+                    <td>Maximum capacity 5MB</th>
+                    <td>Maximum capacity 10MB</td>
+                  </tr>
+                  <tr>
+                    <td>This is session based</th>
+                    <td>This is not session based</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
             </p>
           </div>
         </div>
